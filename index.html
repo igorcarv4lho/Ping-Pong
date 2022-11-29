@@ -38,12 +38,19 @@
             
             canvasCtx.fillStyle = "#ffffff"
 
-            const x = window.innerWidth / 2 - lineWidth / 2
-            const y = 0
-            const w = lineWidth
-            const h = window.innerHeight
+            //DESENHANDO A LINHA CENTRAL
 
-            canvasCtx.fillRect (x,y, w, h )
+            canvasCtx.fillRect (window.innerWidth/2 - lineWidth/2,
+            0, 
+            lineWidth, 
+            window.innerHeight )
+
+            //DESENHANDO A RAQUETE ESQUERDA
+            canvasCtx.fillRect(10,400,lineWidth,200)
+
+            //DESENHANDO A RAQUETE DIREITA
+            canvasCtx.fillRect(window.innerWidth - lineWidth -10,
+            200,lineWidth,200)
         
         }
 
